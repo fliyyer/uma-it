@@ -14,7 +14,7 @@ const Slide = () => {
     const titles = [
         <>Kontente <br /> ho solusaun</>,
         <>
-            Nafatin  <br />kontrola iha
+            Nafatin <br />kontrola iha
         </>,
         <>Build <br />community</>,
         <>
@@ -22,15 +22,16 @@ const Slide = () => {
         </>,
     ];
 
-
     const sliderRef = useRef(null);
     const [showAll, setShowAll] = useState(false);
+
+    const isMobile = window.innerWidth <= 768;
 
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: showAll ? images.length : 3,
+        slidesToShow: showAll ? images.length : (isMobile ? 1 : 3),
         slidesToScroll: 1,
     };
 
@@ -51,15 +52,15 @@ const Slide = () => {
 
     return (
         <div className='flex flex-col my-32 overflow-hidden'>
-            <div className='flex'>
-                <div className='w-40 md:w-2/4 pl-32 pr-4'>
-                    <h1 className='text-6xl mr-16'>Haree testamunha...</h1>
+            <div className='flex flex-col md:flex-row'>
+                <div className='w-full md:w-2/4 px-4 md:pl-32 md:pr-4'>
+                    <h1 className='text-6xl md:mr-16'>Haree testamunha...</h1>
                     <p className='text-base mt-10'>
                         Ami agradese ba sira hotu ne`ebé fó sasin pozitivu kona-ba ami-nia serbisu haklaken. Ita-boot sira sente katak ida-ne`e
                         signifikante tebes ba ami no ami sei kontinua haka`as an atu fornese solusaun di`ak liu ba ekipamentu ko`alia nian no dezeñu
                         kriativu ba ita-boot sira-nia nesesidade.
                     </p>
-                    <div className='mt-28'>
+                    <div className='mt-8 md:mt-28'>
                         <button className='text-black border-2 border-black w-12 h-12 rounded-full px-4 py-2' onClick={prevSlide}>
                             <GrPrevious />
                         </button>
@@ -68,7 +69,7 @@ const Slide = () => {
                         </button>
                     </div>
                 </div>
-                <div className='w-96 md:w-3/4'>
+                <div className='w-full md:w-3/4 mt-8 px-6 md:px-0 md:mt-0'>
                     <div style={{ paddingRight: '16px' }}>
                         <Slider {...settings} ref={sliderRef}>
                             {images.map((image, index) => (

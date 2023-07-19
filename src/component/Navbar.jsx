@@ -16,7 +16,7 @@ export default function NavBar() {
                         </div>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-white rounded-md outline-none focus:border-white focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -54,14 +54,14 @@ export default function NavBar() {
                             }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-white text-base font-normal cursor-pointer">Varanda</li>
-                            <li className="text-white text-base font-normal cursor-pointer">Karreira</li>
-                            <li className="text-white text-base font-normal cursor-pointer">Sentru Ajuda</li>
-                            <li className="text-white text-base font-normal cursor-pointer">Blog</li>
-                            <li className="text-white text-base font-normal cursor-pointer">Produtu</li>
-                            <li className="text-white text-base font-normal cursor-pointer">Sustentabilidade</li>
-                            <div className="pl-28">
-                                <button className="bg-secondary-color w-40 rounded-3xl h-14 items-center py-2 px-7 flex gap-1 text-white border-2 border-white">
+                            <li className="text-white text-base font-normal cursor-pointer hover:underline">Varanda</li>
+                            <li className="text-white text-base font-normal cursor-pointer hover:underline">Karreira</li>
+                            <li className="text-white text-base font-normal cursor-pointer hover:underline">Sentru Ajuda</li>
+                            <li className="text-white text-base font-normal cursor-pointer hover:underline">Blog</li>
+                            <li className="text-white text-base font-normal cursor-pointer hover:underline">Produtu</li>
+                            <li className="text-white text-base font-normal cursor-pointer hover:underline">Sustentabilidade</li>
+                            <div className="md:pl-28">
+                                <button className="bg-secondary-color w-40 rounded-3xl h-14 items-center py-2 px-7 flex gap-1 text-white border-2 border-white transition-colors duration-300 ease-in-out hover:bg-green-500">
                                     <p>Messenger</p>
                                     <img src={Mess} alt="" />
                                 </button>
