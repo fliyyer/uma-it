@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = (props) => {
     return (
-        <div className='bg-secondary-color text-center md:text-left text-white rounded-3xl p-5 w-full md:w-72 h-96 flex flex-col justify-between'>
+        <div className='bg-secondary-color text-center md:text-left text-white rounded-3xl p-5 w-full md:ml-10 xl:ml-20 md:w-72 h-96 flex flex-col justify-between'>
             <div>
                 <p className='text-xs'>{props.app}</p>
                 <h1 className='text-2xl my-5 leading-6'>{props.title}</h1>

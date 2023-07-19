@@ -53,7 +53,7 @@ const Slide = () => {
     return (
         <div className='flex flex-col my-32 overflow-hidden'>
             <div className='flex flex-col md:flex-row'>
-                <div className='w-full md:w-2/4 px-4 md:pl-32 md:pr-4'>
+                <div className='w-full md:w-2/4 px-4 md:pl-32 2xl:pl-72 md:pr-4'>
                     <h1 className='text-6xl md:mr-16'>Haree testamunha...</h1>
                     <p className='text-base mt-10'>
                         Ami agradese ba sira hotu ne`ebé fó sasin pozitivu kona-ba ami-nia serbisu haklaken. Ita-boot sira sente katak ida-ne`e

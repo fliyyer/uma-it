@@ -7,3 +7,11 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.slick-arrow slick-prev {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 100%;
+}
